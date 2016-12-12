@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="form-group">
+    <form action="{% url 'food:consumption-edit' %}" method="post" class="post-form">
+        {% csrf_token %}
+        {% crispy form %}
+        <input type="submit" value="Submit" />
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{%  extends "template.html" %}
+
+{% block content %}
+    <div>
+        <span class="add-row"></span>
+        <a href="{% url 'food:consumption-add' %}">Add New</a>
+    </div>
+
+    {% if consumption_list %}
+        <div class="row">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th><b>#</b></th>
+                <th>Food Name</th>
+                <th>Consumption Date</th>
+                <th>Value (Unit)</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for consumption in consumption_list %}
+                <tr>
+                    <th scope="row"><a href="{% url 'food:consumption-edit' %}">{{ consumption.id }}</a></th>
+                    <td>{{ consumption.food.name }}</td>
+                    <td>{{ consumption.consumption_date }}</td>
+                    <td>{{ consumption.value }} ({{ consumption.unit }})</td>
+                </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        </div>
+    {% else %}
+        <p>No consumption found.</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,40 @@
+#datePicky {
+	font-size:1.25em;
+	text-align: center;
+}
+#datePicky table {
+	width:100%;
+}
+#datePicky td {
+	margin:15px;
+}
+.calKnob {
+	text-align: center;
+}
+.datepicker-inline {
+	width:100%;
+}
+.foodsAndGroups {
+	width:400px;
+}
+.textLeft {
+	text-align: left;
+}
+.input-xs {
+  height: 22px;
+  padding: 2px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.emojis {
+  background-image: url('../plugins/emoji-picker/lib/img/emoji_spritesheet_0.png');
+  background-repeat: no-repeat;
+  width:32px;
+  height:32px;
+}
+
+.mood-happy {
+  height: 64px;
+  background-position: 0 0;
+}

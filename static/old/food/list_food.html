@@ -1,0 +1,17 @@
+{%  extends "template.html" %}
+
+{% block content %}
+    {% if foods %}
+        <div class="row">
+        <ul>
+        {% for food in foods %}
+            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+            <a href="{% url 'food:get-food' food.ndbno %}">{{ food.name }}</a>
+            <br/>
+        {% endfor %}
+        </ul>
+        </div>
+    {% else %}
+        <p>No foods found.</p>
+    {% endif %}
+{% endblock %}

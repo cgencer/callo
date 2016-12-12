@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    {% load staticfiles %}
+    {% load static %}
+	<meta charset="utf-8" />
+	<title>Metronic | Layouts - Horizontal Menu 1</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+	<link href="{% static 'assets/plugins/bootstrap/css/bootstrap-responsive.min.css' %}" rel="stylesheet" type="text/css"/>
+	<link href="{% static 'assets/plugins/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css"/>
+	<link href="{% static 'assets/css/back/style-metro.css' %}" rel="stylesheet" type="text/css"/>
+	<link href="{% static 'assets/css/back/style.css' %}" rel="stylesheet" type="text/css"/>
+	<link href="{% static 'assets/css/back/style-responsive.css' %}" rel="stylesheet" type="text/css"/>
+	<link href="{% static 'assets/css/back/themes/default.css' %}" rel="stylesheet" type="text/css" id="style_color"/>
+	<link href="{% static 'assets/plugins/uniform/css/uniform.default.css' %}" rel="stylesheet" type="text/css"/>
+	<!-- END GLOBAL MANDATORY STYLES -->
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-full-width">
+	<!-- BEGIN HEADER -->   
+	<div class="header navbar navbar-inverse navbar-fixed-top">
+		<!-- BEGIN TOP NAVIGATION BAR -->
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<!-- BEGIN LOGO -->
+				<a class="brand" href="index.html">
+					<img src="assets/img/KarmaCircle-logo.png" id="logoimg" alt="">
+				</a>
+				<!-- END LOGO -->
+				<!-- BEGIN HORIZANTAL MENU -->
+				<div class="navbar hor-menu hidden-phone hidden-tablet">
+					<div class="navbar-inner">
+						<ul class="nav">
+							<li class="visible-phone visible-tablet">
+								<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+								<form class="sidebar-search">
+									<div class="input-box">
+										<a href="javascript:;" class="remove"></a>
+										<input type="text" placeholder="Search..." />            
+										<input type="button" class="submit" value=" " />
+									</div>
+								</form>
+								<!-- END RESPONSIVE QUICK SEARCH FORM -->
+							</li>
+							<li>
+								<a href="index.html">
+									Dashboard
+								</a>
+							</li>
+							<li>
+								<a data-hover="dropdown" data-close-others="true" class="dropdown-toggle" href="javascript:;">
+									Food Categories
+									<span class="arrow"></span>     
+								</a>
+								<ul class="dropdown-menu">
+									<li >
+										<a href="layout_language_bar.html">
+											<span class="badge badge-roundless badge-important">new</span>Custom Lists</a>
+										</li>
+										<li >
+											<a href="dairy.html">Dairy</a>
+										</li>
+										<li>
+											<a href="fruits.html">Fruits</a>
+										</li>
+										<li >
+											<a href="grains.html">Grains & Cereals</a>
+										</li>
+										<li >
+											<a href="proteins.html">Proteins</a>
+										</li>
+										<li >
+											<a href="vegetables.html">Vegetables</a>
+										</li>
+									</ul>
+									<b class="caret-out"></b>                        
+								</li>
+								<li>
+									<a data-hover="dropdown" data-close-others="true" class="dropdown-toggle" href="">Tools
+										<span class="arrow"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="consumption.html">Consumptions</a></li>
+										<li><a href="activities.html">Activities</a></li>
+										<li><a href="coaching.html">Private Coach</a></li>
+									</ul>
+									<b class="caret-out"></b>                        
+								</li>
+								<li>
+									<a data-hover="dropdown" data-close-others="true" class="dropdown-toggle" href="">Extra
+										<span class="arrow"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="page_about.html">About Us</a></li>
+										<li><a href="page_services.html">Services</a></li>
+										<li><a href="page_prices.html">Pricing</a></li>
+										<li><a href="page_faq.html">FAQs</a></li>
+										<li><a href="page_platform.html">Platform Usage</a></li>
+										<li><a href="page_fromyou.html">Coming from you</a></li>
+									</ul>
+									<b class="caret-out"></b>                        
+								</li>
+								<li>
+									<a data-hover="dropdown" data-close-others="true" class="dropdown-toggle" href="">Documentation
+										<span class="arrow"></span>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="page_apidocs.html">API Platform</a></li>
+										<li><a href="page_apikeys.html">Generate API Keys</a></li>
+										<li><a href="page_mobile.html">Mobile</a></li>
+										<li><a href="page_tablet.html">Tablet</a></li>
+									</ul>
+									<b class="caret-out"></b>                        
+								</li>
+								<li>
+									<span class="hor-menu-search-form-toggler">&nbsp;</span>
+									<div class="search-form hidden-phone hidden-tablet">
+										<form class="form-search">
+											<div class="input-append">
+												<input type="text" placeholder="Search..." class="m-wrap">
+												<button type="button" class="btn"></button>
+											</div>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- END HORIZANTAL MENU -->
+					<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+					<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+						<img src="assets/img/menu-toggler.png" alt="" />
+					</a>          
+					<!-- END RESPONSIVE MENU TOGGLER -->            
+					<!-- BEGIN TOP NAVIGATION MENU -->              
+					<ul class="nav pull-right">
+						<!-- BEGIN USER LOGIN DROPDOWN -->
+						<li class="dropdown user">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<img alt="" src="assets/img/avatar1_small.jpg" />
+								<span class="username">Bob Nilson</span>
+								<i class="icon-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="extra_profile.html"><i class="icon-user"></i> My Profile</a></li>
+								<li><a href="page_calendar.html"><i class="icon-calendar"></i> My Calendar</a></li>
+								<li class="divider"></li>
+								<li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+							</ul>
+						</li>
+						<!-- END USER LOGIN DROPDOWN -->
+					</ul>
+					<!-- END TOP NAVIGATION MENU --> 
+				</div>
+			</div>
+			<!-- END TOP NAVIGATION BAR -->
+		</div>
+		<!-- END HEADER -->
+		<!-- BEGIN CONTAINER -->   
+		<div class="page-container row-fluid" >
+			<!-- BEGIN PAGE -->
+			<div class="page-content">
+				<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+				<div id="portlet-config" class="modal hide">
+					<div class="modal-header">
+						<button data-dismiss="modal" class="close" type="button"></button>
+						<h3>portlet Settings</h3>
+					</div>
+					<div class="modal-body">
+						<p>Here will be a configuration form</p>
+					</div>
+				</div>
+				<!-- BEGIN PAGE CONTAINER-->
+				<div class="container-fluid">
+					<!-- BEGIN PAGE HEADER-->
+					<div class="row-fluid">
+						<div class="span12">
+							<!-- BEGIN PAGE TITLE & BREADCRUMB-->
+							<h3 class="page-title">
+								Horizontal Menu 1 <small>horizontal menu layout</small>
+							</h3>
+							<ul class="breadcrumb">
+								<li>
+									<i class="icon-home"></i>
+									<a href="index.html">Home</a> 
+									<i class="icon-angle-right"></i>
+								</li>
+								<li>
+									<a href="#">Layouts</a>
+									<i class="icon-angle-right"></i>
+								</li>
+								<li><a href="#">Horizontal Menu 1</a></li>
+							</ul>
+							<!-- END PAGE TITLE & BREADCRUMB-->
+						</div>
+					</div>
+					<!-- END PAGE HEADER-->
+					<!-- BEGIN PAGE CONTENT-->
+					<form action="/core/profile" method="POST" accept-charset="utf-8">
+					{% csrf_token %}
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="portlet box green">
+								<div class="portlet-title">
+									<div class="caption"><i class="icon-reorder"></i>User Information</div>
+								</div>
+								<div class="portlet-body form">
+									<!-- BEGIN FORM-->
+									<form action="#" class="form-horizontal">
+										<h3 class="form-section">Person Info</h3>
+										<div class="row-fluid">
+											<div class="span6 ">
+												<div class="control-group">
+													<label class="control-label">First Name</label>
+													<div class="controls">
+														<input type="text" name="first_name" class="m-wrap span12" placeholder="{{ profile.name }}">
+													</div>
+												</div>
+											</div>
+											<!--/span-->
+											<div class="span6 ">
+												<div class="control-group"><!-- if error: add 'error' to the class -->
+													<label class="control-label">Last Name</label>
+													<div class="controls">
+														<input type="text" name="last_name" class="m-wrap span12" placeholder="{{ profile.surname }}">
+														<!--<span class="help-block">This field has error.</span>-->
+													</div>
+												</div>
+											</div>
+											<!--/span-->
+										</div>
+										<!--/row-->
+										<div class="row-fluid">
+											<div class="span6 ">
+												<div class="control-group">
+													<label class="control-label">Gender</label>
+													<div class="controls">
+														<select name="gender" class="m-wrap span12">
+															<option value="m">Male</option>
+															<option value="f">Female</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<!--/span-->
+											<div class="span6 ">
+												<div class="control-group">
+													<label class="control-label" >Date of Birth</label>
+													<div class="controls">
+														<input type="text" name="birth_date" class="m-wrap span12" id="userBirth" placeholder="dd/mm/yyyy" value={{ profile.birth }}>
+													</div>
+												</div>
+											</div>
+											<!--/span-->
+										</div>
+										<h3 class="form-section">Your stats</h3>
+										<!--/row-->                   
+										<div class="row-fluid">
+											<div class="span6 ">
+												<div class="control-group">
+													<label class="control-label">Weight</label>
+													<div class="controls">
+														<input type="text" name="weight" class="m-wrap span12" id="userW" value={{ profile.weight }}> 
+													</div>
+												</div>
+											</div>
+											<!--/span-->
+											<div class="span6 ">
+												<div class="control-group">
+													<label class="control-label">Calculated BMI</label>
+													<div class="controls">
+														<input type="text" name="bmi" class="m-wrap span12" id="userBMI" value=""> 
+													</div>
+												</div>
+											</div>
+											<!--/span-->
+										</div>
+										<!--/row-->           
+										<div class="row-fluid">
+											<div class="span6 ">
+												<div class="control-group">
+													<label class="control-label">Height</label>
+													<div class="controls">
+														<input type="text" name="height" class="m-wrap span12" id="userH" value="{{ profile.height }}"> 
+													</div>
+												</div>
+											</div>
+
+											<div class="span6 ">
+												<div class="control-group">
+													<label class="control-label">Calculated BM rate</label>
+													<div class="controls">
+														<input type="text" name="bmr" id="userBMR" class="m-wrap span12"> 
+													</div>
+												</div>
+											</div>
+											<!--/span-->
+										</div>
+										<!--/row-->
+										<div class="form-actions">
+											<button type="submit" class="btn blue"><i class="icon-ok"></i> Save</button>
+											<button type="button" class="btn">Cancel</button>
+										</div>
+									</form>
+									<!-- END FORM-->                
+								</div>
+							</div>
+
+						</div>
+					</div>
+					</form>
+					<!-- END PAGE CONTENT-->
+				</div>
+				<!-- END PAGE CONTAINER--> 
+			</div>
+			<!-- END PAGE -->    
+		</div>
+		<!-- END CONTAINER -->
+		<!-- BEGIN FOOTER -->
+		<div class="footer">
+			<div class="footer-inner">
+				2016 &copy; KarmaCricle.
+			</div>
+			<div class="footer-tools">
+				<span class="go-top">
+					<i class="icon-angle-up"></i>
+				</span>
+			</div>
+		</div>
+		<!-- END FOOTER -->
+		<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+		<!-- BEGIN CORE PLUGINS -->   <script src="{% static 'assets/plugins/jquery-1.10.1.min.js' %}" type="text/javascript"></script>
+		<script src="{% static 'assets/plugins/jquery-migrate-1.2.1.min.js' %}" type="text/javascript"></script>
+		<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+		<script src="{% static 'assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js' %}" type="text/javascript"></script>      
+		<script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
+		<script src="{% static 'assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js' %}" type="text/javascript" ></script>
+	<!--[if lt IE 9]>
+	<script src="{% static 'assets/plugins/excanvas.min.js' %}"></script>
+	<script src="{% static 'assets/plugins/respond.min.js' %}"></script>  
+	<![endif]-->   
+	<script src="{% static 'assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'assets/plugins/jquery.blockui.min.js' %}" type="text/javascript"></script>  
+	<script src="{% static 'assets/plugins/jquery.cookie.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'assets/plugins/uniform/jquery.uniform.min.js' %}" type="text/javascript" ></script>
+	<!-- END CORE PLUGINS -->
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+	<script src="{% static 'assets/plugins/flot/jquery.flot.min.js' %}"></script>
+	<script src="{% static 'assets/plugins/flot/jquery.flot.resize.min.js' %}"></script>
+	<script src="{% static 'assets/plugins/flot/jquery.flot.pie.min.js' %}"></script>
+	<script src="{% static 'assets/plugins/flot/jquery.flot.stack.min.js' %}"></script>
+	<script src="{% static 'assets/plugins/flot/jquery.flot.crosshair.min.js' %}"></script>
+	<!-- END PAGE LEVEL PLUGINS -->
+	<script src="{% static 'assets/scripts/back/app.js' %}"></script>      
+	<script src="{% static 'assets/scripts/back/charts.js' %}"></script>      
+
+
+	<script>
+		jQuery(document).ready(function() {
+			$('#userBMI').val( Math.round($('#userW').val() / (($('#userH').val()/100) * ($('#userH').val()/100) )) );
+			var d = new Date();
+			var age = d.getFullYear() - Number($('#userBirth').val().substr(-4, 4));
+
+			$('#userBMR').val( 
+				Math.round((10 * Number( $('#userW').val() ) + 
+				(6.25 * Number( $('#userH').val())) - 
+				(5 * age) + 
+				5)));
+			App.init();
+			Charts.init();
+			Charts.initCharts();
+			Charts.initPieCharts();
+		});
+	</script>
+	<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

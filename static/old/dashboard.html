@@ -1,0 +1,29 @@
+
+<input type="text" id="txtName" name="txtName">
+<input type="button" id="btnSearchFoods" value="searchFoods" />
+<label id="lblData"></label>
+<li>
+	
+</li>
+
+<script src="/static/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="/static/pages/usda.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(function() {
+	    $('#btnSearchFoods').click(function() {
+	        var name = $('#txtName').val();
+	        search_food(name,
+                function () {
+                    success : function onSucess (response) {
+                        console.log(response);
+                        $('#lblData').html('<b>'+JSON.stringify(response)+'</b>');
+                    }
+                    error : function onError(error) {
+                        console.log(error);
+                    }
+                }
+            );
+	    });
+	});
+</script>

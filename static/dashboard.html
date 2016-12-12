@@ -1,0 +1,78 @@
+{% extends "template.html" %}
+
+
+{% block content %}
+<div class="row">
+
+    {% for card in cards %}
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="icon-big icon-warning text-center">
+                            <i class={{ card.icon1 }}></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="numbers">
+                            <p>{{ card.title }}</p>{{ card.value }} {{ card.unit }}
+                        </div>
+                    </div>
+                </div>
+                        <!--
+                        <div class="footer">
+                            <hr />
+                            <div class="stats">
+                                <i class={{ card.icon2 }}></i>{{ card.comment }}
+                            </div>
+                        </div>
+                        -->
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="col-md-6">
+        <div class="card ">
+            <div class="header">
+                <h4 class="title">Daily Energy Intake / Outtake</h4>
+            </div>
+            <div class="content">
+                <div id="chartEnergyHistory" class="ct-chart"></div>
+                <div class="footer">
+                    <div class="chart-legend">
+                        <i class="fa fa-circle text-info"></i> Intake
+                        <i class="fa fa-circle text-warning"></i> Outtake
+                    </div>
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-check"></i> in calories
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card ">
+            <div class="header">
+                <h4 class="title">Weekly Weight History</h4>
+            </div>
+            <div class="content">
+                <div id="chartWeightHistory" class="ct-chart"></div>
+                <div class="footer">
+                    <div class="chart-legend">
+                        <i class="fa fa-circle text-info"></i> Weight
+                    </div>
+                    <hr>
+                    <div class="stats">
+                        <i class="ti-check"></i> in kg
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

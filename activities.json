@@ -1,0 +1,138 @@
+[
+   {
+      "title": "Aerobics",
+      "calories": 254
+   },
+   {
+      "title": "Step Aerobics",
+      "calories": 320
+   },
+    {
+        "title": "Badminton",
+        "calories": 331
+    },
+    {
+        "title": "Basketball",
+        "calories": 485
+    },
+    {
+        "title": "Bicycling",
+        "calories": 276
+    },
+    {
+        "title": "Bowling",
+        "calories": 121
+    },
+    {
+        "title": "Canoeing",
+        "calories": 154
+    },
+    {
+        "title": "Cross Country Ski",
+        "calories": 485
+    },
+    {
+        "title": "Dancing",
+        "calories": 220
+    },
+    {
+        "title": "Golfing",
+        "calories": 220
+    },
+    {
+        "title": "Handball",
+        "calories": 507
+    },
+    {
+        "title": "Hiking",
+        "calories": 441
+    },
+    {
+        "title": "Jogging 8kph",
+        "calories": 408
+    },
+    {
+        "title": "Jogging 10kph",
+        "calories": 507
+    },
+    {
+        "title": "Raquetball",
+        "calories": 452
+    },
+    {
+        "title": "Rowing Machine",
+        "calories": 397
+    },
+    {
+        "title": "Running 13kph",
+        "calories": 672
+    },
+    {
+        "title": "Running 16kph",
+        "calories": 772
+    },
+    {
+        "title": "Skipping Rope",
+        "calories": 628
+    },
+    {
+        "title": "Skiing downhill",
+        "calories": 287
+    },
+    {
+        "title": "Soccer",
+        "calories": 430
+    },
+    {
+        "title": "Squash",
+        "calories": 452
+    },
+    {
+        "title": "Stair Climbing",
+        "calories": 309
+    },
+    {
+        "title": "Swimming 25 mpm",
+        "calories": 265
+    },
+    {
+        "title": "Swimming 50mpm",
+        "calories": 496
+    },
+    {
+        "title": "Tennis",
+        "calories": 243
+    },
+    {
+        "title": "Volleyball",
+        "calories": 154
+    },
+    {
+        "title": "Walking 3kph",
+        "calories": 132
+    },
+    {
+        "title": "Walking 5kph",
+        "calories": 176
+    },
+    {
+        "title": "Walking 6kph",
+        "calories": 220
+    },
+    {
+        "title": "Waterski",
+        "calories": 353
+    },
+    {
+        "title": "Walking 3kph",
+        "calories": 132
+    },
+    {
+        "title": "Weight training fast",
+        "calories": 562
+    },
+    {
+        "title": "Weight training moderate",
+        "calories": 419
+    }
+]

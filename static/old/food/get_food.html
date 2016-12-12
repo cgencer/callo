@@ -1,0 +1,9 @@
+{% extends "template.html" %}
+
+{% block content %}
+    {% if food %}
+        <b>ndnbo: </b>{{ food.ndbno }}<br>
+        <b>group: </b>{{ food.group }}<br>
+        <b>name: </b>{{ food.name }}<br>
+    {% endif %}
+{% endblock %}
